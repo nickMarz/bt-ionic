@@ -7,12 +7,11 @@
             </label>
         </form>
         <form class="list" >
-            <label class="item item-select" name="Catagorey Filter">
+            <label class="item item-select"  name="Catagorey Filter" for="mySelect">
                 <span class="input-label">Filter</span>
-                <select>
-
+                <select ng-model="q">
                         <ion-list>
-                            <option ion-option  ng-repeat="tag in tags">
+                            <option ion-option  ng-repeat="tag in tags" value="{{tag.category}}">
                                 {{tag.category}}
                             </option ion-option >
                         </ion-list>
@@ -21,14 +20,16 @@
             </label>
         </form>
 
-
-    <ion-list  ng-repeat="image in images">
+    <ion-list  ng-repeat="item in items | filter:q as results">
         <div class="list card">
             <div class="item item-divider">
-                {{ image.tag }}<span> {{image.id}}</span>
+                <ul>
+                    <li  ng-repeat="tag in item.tag ">{{tag}}</li>
+                </ul>
+                <span class="pull-right"> {{item.id}}</span>
             </div>
             <div class="item item-image">
-                <img ng-src="img/{{ image.path }}">
+                <img ng-src="img/{{ item.path }}">
             </div>
         </div>
     </ion-list>
