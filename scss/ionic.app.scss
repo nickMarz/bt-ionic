@@ -24,14 +24,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .text-right {
 	text-align: right;
 }
-.pull-left {
-	text-align: right;
-}
+
 .card-ul {
 
 }
 
 .button-fullwidth {
-	width: 100%;
-
+	width: 100% !important;
 }

@@ -1,4 +1,8 @@
 {
   "name": "bt",
-  "app_id": ""
+  "app_id": "ec8cf5f5",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
 }
