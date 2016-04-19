@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module("starter", ["ionic", "firebase"])
   .factory("Auth", function($firebaseAuth) {
-    var usersRef = new Firebase("https//<YOUR-FIREBASE-APP>.firebaseio.com/users");
+    var usersRef = new Firebase("https//faction.firebaseio.com/users");
     return $firebaseAuth(usersRef);
   })
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives'])

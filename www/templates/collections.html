@@ -19,8 +19,10 @@
                 </select>
             </label>
         </form>
+<!-- <div class="row responsive-sm"> -->
 
     <ion-list  ng-repeat="item in items | filter:q | filter:i as results">
+    <!-- <div class="col"> -->
         <div class="list card">
             <div class="item item-divider">
                 <ul class="card-ul">
@@ -33,7 +35,9 @@
                 <img ng-src="img/{{ item.path }}">
             </div>
         </div>
+        <!-- </div> -->
     </ion-list>
+    <!-- </div> -->
 
     </ion-content>
 </ion-view>

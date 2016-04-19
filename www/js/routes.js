@@ -9,7 +9,10 @@ angular.module('app.routes', [])
   $stateProvider
 
 
-
+    .state('index', {
+      url: '/index',
+      templateUrl: 'templates/index.html'
+    })
 
 
 
@@ -79,7 +82,7 @@ angular.module('app.routes', [])
 
   // if none of the above states are matched, use this as the fallback
 
-  $urlRouterProvider.otherwise('/page1');
+  $urlRouterProvider.otherwise('/index');
 
 
 
