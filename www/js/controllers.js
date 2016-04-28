@@ -83,4 +83,15 @@ angular.module('app.controllers', [])
 
 .controller('addNewItemCtrl', function($scope) {
 
+$scope.takePicture = function() {
+     console.log( 'take pic' );
+}
+
+// ionic.Platform.ready(function() {
+    var upload_preview = document.body.querySelector('.upload-preview')
+    // console.log( upload_preview );
+    console.log( navigator );
+     console.log( ionic );
+// }
+
 })
